@@ -11,6 +11,8 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
+  templates:
+  - 4-column-footer
 - type: directory
   path: ''
   label: Pages
@@ -18,9 +20,12 @@ sections:
   match: "*.md"
   exclude: "*README.md"
   new_doc_ext: md
+  templates:
+  - default
 - type: document
   path: _config.yml
   label: Config
+  read_only: true
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
